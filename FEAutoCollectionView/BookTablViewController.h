@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  BookTablViewController.h
 //  FEAutoCollectionView
 //
-//  Created by FlyElephant on 16/4/29.
+//  Created by FlyElephant on 16/5/3.
 //  Copyright © 2016年 FlyElephant. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface BookTablViewController : UITableViewController
 
 @end
-
