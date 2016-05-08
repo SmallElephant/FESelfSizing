@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gKU-NC-3Ji">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gKU-NC-3Ji">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+>>>>>>> master
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -22,7 +29,11 @@
             </objects>
             <point key="canvasLocation" x="-253.5" y="534.5"/>
         </scene>
+<<<<<<< HEAD
         <!--FESelfSizing-->
+=======
+        <!--View Controller-->
+>>>>>>> master
         <scene sceneID="LMu-me-mlU">
             <objects>
                 <viewController id="rPT-ub-2n8" sceneMemberID="viewController">
@@ -72,7 +83,11 @@
                             <constraint firstItem="r0X-4M-01P" firstAttribute="top" secondItem="jDJ-W8-8hE" secondAttribute="bottom" constant="20" id="xKP-el-zd9"/>
                         </constraints>
                     </view>
+<<<<<<< HEAD
                     <navigationItem key="navigationItem" title="FESelfSizing" id="ROw-M8-P26"/>
+=======
+                    <navigationItem key="navigationItem" id="ROw-M8-P26"/>
+>>>>>>> master
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X1b-Z0-1HU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -146,7 +161,11 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bAt-mM-m2z" id="3KP-bb-ELo">
+<<<<<<< HEAD
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+=======
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+>>>>>>> master
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
