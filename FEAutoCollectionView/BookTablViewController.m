@@ -38,7 +38,6 @@ static  NSString * const CellIdentifier=@"UITableViewCellIdentifier";
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     BookTableViewCell *cell=[self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     [cell setupModel:self.data[indexPath.row]];
-//    cell.accessoryType=UITableViewCellAccessoryNone;
     return cell;
 }
 
@@ -54,15 +53,16 @@ static  NSString * const CellIdentifier=@"UITableViewCellIdentifier";
 //    return YES;
 //}
 
+
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleInsert;
+}
+
 -(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath{
     return @"删除";
 }
-
-//- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-////    return UITableViewCellEditingStyleInsert;
-//    return UITableViewCellEditingStyleDelete;
-//}
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
@@ -82,7 +82,7 @@ static  NSString * const CellIdentifier=@"UITableViewCellIdentifier";
 #pragma mark - setup
 
 -(void)setup{
-    //    [self.tableView setEditing:YES animated:YES];
+    [self.tableView setEditing:YES animated:YES];
     self.tableView.estimatedRowHeight=120.0f;
     self.tableView.rowHeight=UITableViewAutomaticDimension;
     self.data=[NSMutableArray array];
