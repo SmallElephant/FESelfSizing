@@ -8,10 +8,12 @@
 
 #import "BookCollectionViewController.h"
 #import "BookCollectionViewCell.h"
+#import "FECollectionViewFlowLayout.h"
+#import "UICollectionViewLeftAlignedLayout.h"
 
 static NSString *const CollectionViewIdentifier = @"BookCollectionViewCell";
 
-@interface BookCollectionViewController ()<UICollectionViewDataSource, UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+@interface BookCollectionViewController ()<UICollectionViewDataSource, UICollectionViewDelegate,UICollectionViewDelegateLeftAlignedLayout>
 
 @property (strong, nonatomic) NSMutableArray *data;
 
@@ -52,8 +54,21 @@ static NSString *const CollectionViewIdentifier = @"BookCollectionViewCell";
 #pragma mark - setup
 
 - (void)setup {
-    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    layout.estimatedItemSize = CGSizeMake(100, 100);
+//    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+//    layout.estimatedItemSize = CGSizeMake(100, 40);
+    
+    FECollectionViewFlowLayout *layout = [[FECollectionViewFlowLayout alloc] init];
+    layout.estimatedItemSize = CGSizeMake(100, 40);
+//    layout.itemSize=CGSizeMake(100, 40);
+
+//    UICollectionViewLeftAlignedLayout *layout = [[UICollectionViewLeftAlignedLayout alloc] init];
+//    layout.estimatedItemSize = CGSizeMake(100, 40);
+    
+//    CGRect frame =CGRectMake(0, 100, 300, 300);
+//    UICollectionViewLeftAlignedLayout *layout = [[UICollectionViewLeftAlignedLayout alloc] init];
+//    layout.estimatedItemSize=CGSizeMake(100, 40);
+//    self.collectionView.frame=frame;
+//    
     [self.collectionView registerClass:[BookCollectionViewCell class] forCellWithReuseIdentifier:CollectionViewIdentifier];
     self.collectionView.backgroundColor      = [UIColor redColor];
     self.collectionView.collectionViewLayout = layout;

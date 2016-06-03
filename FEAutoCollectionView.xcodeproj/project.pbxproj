@@ -21,6 +21,10 @@
 		A82080381CD8896D00134AC5 /* BookCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A82080361CD8896D00134AC5 /* BookCollectionCell.xib */; };
 		A820803B1CD88AC200134AC5 /* BookCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A820803A1CD88AC200134AC5 /* BookCollectionViewCell.m */; };
 		A820803C1CD88AC200134AC5 /* BookCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A820803A1CD88AC200134AC5 /* BookCollectionViewCell.m */; };
+		A882F8021D013C9F00CD5DFF /* FECollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A882F8011D013C9F00CD5DFF /* FECollectionViewFlowLayout.m */; };
+		A882F8031D013C9F00CD5DFF /* FECollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A882F8011D013C9F00CD5DFF /* FECollectionViewFlowLayout.m */; };
+		A882F8061D0149BD00CD5DFF /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A882F8051D0149BD00CD5DFF /* UICollectionViewLeftAlignedLayout.m */; };
+		A882F8071D0149BD00CD5DFF /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A882F8051D0149BD00CD5DFF /* UICollectionViewLeftAlignedLayout.m */; };
 		A8CE2F1C1CD339DE00CBAAD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8CE2F1B1CD339DE00CBAAD2 /* main.m */; };
 		A8CE2F1F1CD339DE00CBAAD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8CE2F1E1CD339DE00CBAAD2 /* AppDelegate.m */; };
 		A8CE2F221CD339DE00CBAAD2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8CE2F211CD339DE00CBAAD2 /* MainViewController.m */; };
@@ -61,6 +65,10 @@
 		A82080361CD8896D00134AC5 /* BookCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookCollectionCell.xib; sourceTree = "<group>"; };
 		A82080391CD88AC200134AC5 /* BookCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookCollectionViewCell.h; sourceTree = "<group>"; };
 		A820803A1CD88AC200134AC5 /* BookCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookCollectionViewCell.m; sourceTree = "<group>"; };
+		A882F8001D013C9F00CD5DFF /* FECollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FECollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		A882F8011D013C9F00CD5DFF /* FECollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FECollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		A882F8041D0149BD00CD5DFF /* UICollectionViewLeftAlignedLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewLeftAlignedLayout.h; sourceTree = "<group>"; };
+		A882F8051D0149BD00CD5DFF /* UICollectionViewLeftAlignedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewLeftAlignedLayout.m; sourceTree = "<group>"; };
 		A8CE2F171CD339DE00CBAAD2 /* FEAutoCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FEAutoCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CE2F1B1CD339DE00CBAAD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A8CE2F1D1CD339DE00CBAAD2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,6 +164,10 @@
 				A8CE2F281CD339DE00CBAAD2 /* LaunchScreen.storyboard */,
 				A8CE2F2B1CD339DE00CBAAD2 /* Info.plist */,
 				A8CE2F1A1CD339DE00CBAAD2 /* Supporting Files */,
+				A882F8001D013C9F00CD5DFF /* FECollectionViewFlowLayout.h */,
+				A882F8011D013C9F00CD5DFF /* FECollectionViewFlowLayout.m */,
+				A882F8041D0149BD00CD5DFF /* UICollectionViewLeftAlignedLayout.h */,
+				A882F8051D0149BD00CD5DFF /* UICollectionViewLeftAlignedLayout.m */,
 			);
 			path = FEAutoCollectionView;
 			sourceTree = "<group>";
@@ -323,6 +335,8 @@
 				A820802C1CD8674D00134AC5 /* BookTableViewCell.m in Sources */,
 				A82080241CD85B6300134AC5 /* BookTablViewController.m in Sources */,
 				A82080341CD8872600134AC5 /* BookCollectionViewController.m in Sources */,
+				A882F8021D013C9F00CD5DFF /* FECollectionViewFlowLayout.m in Sources */,
+				A882F8061D0149BD00CD5DFF /* UICollectionViewLeftAlignedLayout.m in Sources */,
 				A82080301CD86AE300134AC5 /* BookModel.m in Sources */,
 				A8CE2F221CD339DE00CBAAD2 /* MainViewController.m in Sources */,
 				A820803B1CD88AC200134AC5 /* BookCollectionViewCell.m in Sources */,
@@ -335,8 +349,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A882F8071D0149BD00CD5DFF /* UICollectionViewLeftAlignedLayout.m in Sources */,
 				A82080251CD85B6300134AC5 /* BookTablViewController.m in Sources */,
 				A820802D1CD8674D00134AC5 /* BookTableViewCell.m in Sources */,
+				A882F8031D013C9F00CD5DFF /* FECollectionViewFlowLayout.m in Sources */,
 				A82080311CD86AE300134AC5 /* BookModel.m in Sources */,
 				A82080351CD8872600134AC5 /* BookCollectionViewController.m in Sources */,
 				A8CE2F351CD339DE00CBAAD2 /* FEAutoCollectionViewTests.m in Sources */,
